@@ -1,0 +1,64 @@
+.home{
+    padding: 0px 10px;
+    padding-bottom: 100px;
+}
+.hero{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin: 80px auto;
+}
+.hero h1{
+    font-size: max(4vw, 36px);
+    color: #1f2b84;
+}
+.hero p{
+    color: #555;
+    line-height: 1.5;
+}
+.hero form{
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+.hero input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    padding-left: 10px;
+}
+.hero button{
+    background: #7927ff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.crypto-table{
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(rgba(84,3,255,0.15), rgba(105,2,153,0.15));
+    border-radius: 15px;
+}
+.table-layout{
+    display: flex;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1,5fr;
+    padding: 15px 20px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
