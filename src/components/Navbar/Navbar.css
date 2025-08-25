@@ -16,13 +16,18 @@
 }
 .navbar li{
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
 }
-.navbar-right{
+.nav-right{
     display: flex;
-    align-items: center;
     gap: max(1vw, 12px);
 }   
+.signup-btn{
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+    align-items: right;
+    padding-left: 20px;
+}
 .navbar select{
     background: transparent;
     color: white;
