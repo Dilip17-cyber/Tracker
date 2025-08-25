@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
   
-# How to clone this 
+# How to clone 
 Open vs code  
 Click on Explorer
 Click on Clone repository -- CLone from GitHub
@@ -20,9 +20,24 @@ Paste the link of the repository https://github.com/niure/Tracker.git or click D
 Open terminal 
 Run npm install
 npm run dev
- 
+
+# How to push code to github
+git init
+git add .
+git commit -m "write message here"
+git push -u origin main
+
+# How to pull code from github
+git pull origin main
+
+# How to create a new branch
+git checkout -b new-branch-name
+
+# How to merge a branch
+git checkout main
+git merge 
+
+
 If you have any question just ask me.
  --Kapil
-
-
 
