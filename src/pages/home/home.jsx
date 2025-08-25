@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect} from 'react'
 import './home.css'
 import { CoinContext } from '../../context/CoinContext'
 
-const home = () => {
+const Home = () => {
 
 const {allCoins, currency} = useContext(CoinContext);
 const [displayCoins, setDisplayCoins] = useState([]);
@@ -26,8 +26,8 @@ useEffect(() => {
         <p>#</p>
         <p>Coins</p>
         <p>Price</p>
-        <p>24h Change</p>
-        <p>Market Cap</p>
+        <p style={{textAlign:"center"}}>24h Change</p>
+        <p className='market-cap'>Market Cap</p>
        </div>
        {
         displayCoins.slice(0,10).map((item, index) => (
@@ -37,7 +37,11 @@ useEffect(() => {
               <img src ={item.image} alt="" />
               <p>{item.name + "- " + item.symbol}</p>
             </div>
-            <p>{currency.symbol} {item.current_price}</p>
+            <p>{currency.symbol} {item.current_price.toLocaleString()}</p>
+            <p className={item.price_change_percentage_24h>0 ? "green" : "red"}>
+              {Math.floor(item.price_change_percentage_24h*100)/100}
+              </p>
+            <p className='market-cap'> {currency.symbol} {item.market_cap.toLocaleString()}</p>
 
           </div>
         
@@ -48,4 +52,4 @@ useEffect(() => {
   )
 }
 
-export default home
+export default Home
