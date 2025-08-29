@@ -14,10 +14,12 @@
 }
 .hero h1{
     font-size: max(4vw, 36px);
-    color: #1f2b84;
+    color: #FFFFFF;
+    
+
 }
 .hero p{
-    color: #555;
+    color: #FFFFFF;
     line-height: 1.5;
 }
 .hero form{
@@ -71,8 +73,6 @@
     font-weight: 500;
     color: #aaa;
 }
-
-
 
 .table-layout:last-child {
     border: none;

@@ -32,6 +32,14 @@ const Navbar = () => {
         })
         break;
       }
+        
+        case "jpy":{
+          setcurrency({
+            name: "JPY",
+            symbol: "¥"
+          })
+          break;
+      }
       default:{
         setcurrency({
           name: "USD",
@@ -59,7 +67,6 @@ const Navbar = () => {
             <option value="usd">USD</option>
             <option value="euro">EUR</option>
             <option value="inr">INR</option>
-            <option value="npr">NPR</option>
             <option value="jpy">JPY</option>
         </select>
         <button className='signup-btn'>Sign up <img src={arrow_icon} alt="" /></button>
