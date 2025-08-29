@@ -44,10 +44,6 @@ useEffect(() => {
               {allCoins.map((item, index) => (<option key={index} value={item.name} />))}
             </datalist>
 
-
-
-
-
             <button type='submit'>Search</button>        
         </form>
      </div>
@@ -60,7 +56,7 @@ useEffect(() => {
         <p className='market-cap'>Market Cap</p>
        </div>
        {
-        displayCoins.slice(0,10).map((item, index) => (
+        displayCoins.slice(0,20).map((item, index) => (
           <Link to={`/coin/${item.id}`}className="table-layout" key={index}>
             <p>{item.market_cap_rank}</p>
             <div>
